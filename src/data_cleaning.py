@@ -16,8 +16,7 @@ def load_data(file_path: str) -> pd.DataFrame:
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"File not found: {file_path}")
     df = pd.read_csv(file_path)
-    print(f"Loaded data with {df.shape[0]} rows and {df.shape[1]} columns")
-    return df
+    print(f"Loaded data with {df.shape[0]} rows and {df.shape[1]} columns"
 
 # Function: clean_column_names
 # Purpose: Standardize column names to lowercase and underscores.
